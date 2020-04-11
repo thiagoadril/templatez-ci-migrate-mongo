@@ -1,0 +1,26 @@
+{
+  "name": "template-ci-migrate-mongo",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "migrate-mongo": "^7.1.0"
+  },
+  "scripts": {
+    "create:development": "migrate-mongo -f config/migrate-mongo-config-development.js create",
+    "create:testing": "migrate-mongo -f config/migrate-mongo-config-testing.js create",
+    "create:staging": "migrate-mongo -f config/migrate-mongo-config-staging.js create",
+    "create:production": "migrate-mongo -f config/migrate-mongo-config-production.js create",
+    "up:development": "migrate-mongo -f config/migrate-mongo-config-development.js up",
+    "up:testing": "migrate-mongo -f config/migrate-mongo-config-testing.js up",
+    "up:staging": "migrate-mongo -f config/migrate-mongo-config-staging.js up",
+    "up:production": "migrate-mongo -f config/migrate-mongo-config-production.js up",
+    "down:development": "migrate-mongo -f config/migrate-mongo-config-development.js down",
+    "down:testing": "migrate-mongo -f config/migrate-mongo-config-testing.js down",
+    "down:staging": "migrate-mongo -f config/migrate-mongo-config-staging.js down",
+    "down:production": "migrate-mongo -f config/migrate-mongo-config-production.js down",
+    "status:development": "migrate-mongo status -f config/migrate-mongo-config-development.js",
+    "status:testing": "migrate-mongo status -f config/migrate-mongo-config-testing.js",
+    "status:staging": "migrate-mongo status -f config/migrate-mongo-config-staging.js",
+    "status:production": "migrate-mongo status -f config/migrate-mongo-config-production.js"
+  }
+}
