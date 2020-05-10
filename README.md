@@ -1,3 +1,3 @@
-# CI - MIGRATE MONGO [NodeJS]
+# Templatez - Migrate Mongo [NodeJS]
 
 **NodeJS** migrate mongo ci template
