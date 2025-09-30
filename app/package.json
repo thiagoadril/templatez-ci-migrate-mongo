@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "migrate-mongo": "^7.1.0"
+    "migrate-mongo": "^12.1.3"
   },
   "scripts": {
     "create:development": "migrate-mongo -f config/migrate-mongo-config-development.js create",
